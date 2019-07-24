@@ -59,5 +59,11 @@ obj1=('adam',18) # 形参self接受obj1的变量，第一个值name接受adam，
      >>> list(enumerate(seasons)) # 相当于遍历seasons列表，按照切片值输出对应元素
      [(0, 'Spring'), (1, 'Summer'), (2, 'Fall'), (3, 'Winter')]
 （2）可以用多种方式构建列表：（1）使用一对方括号来表示空列表: []；（2）使用方括号，其中的项以逗号分隔: [a], [a, b, c]；（3）使用列表推导式: [x for x in iterable]；（4）使用类型的构造器: list() 或 list(iterable)，如list(range(5)),形成一个序列[0,1,2,3,4]。
-（3）
+（3）for……
+        for……
+           if……
+           break # 完全跳出该循环（第二个），继续执行下面的语句，所以break必须接else来转换另一种情况；
+                   continue 应该是只跳出该次循环继续下次循环，接另一种情况
+        else # 这个else是第一个for里的，不是if的；如果第二个for循环不满足条件，则直接执行else
+（4）
     
