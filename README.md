@@ -66,3 +66,18 @@ obj1=('adam',18) # 形参self接受obj1的变量，第一个值name接受adam，
                    continue 应该是只跳出该次循环继续下次循环，接另一种情况
         else # 这个else是第一个for里的，不是if的；如果第二个for循环不满足条件，则直接执行else
   
+# Day8
+捕获异常：try:程序体  except Exception as e:print（e），except将错误捕获赋值给e变量，然后打印出来，这样程序运行时就不会报错。except后面可以跟具体   的错误类型，但如果程序错误与我们定义的错误类型不匹配，那么程序仍然会报错，故而当不确定错误类型时，可以直接跟Exception。因此可以将except视为接收了错   误并打印出来。
+抛出异常：raise 异常名称('异常描述')，当异常需要自定义时，只能选择人为抛出异常。例：
+class CustomError(Exception):
+    def__init__(self,ErrorInfo):
+        super().__init__(self) #初始化父类
+        self.errorinfo=ErrorInfo
+    def__str__(self):
+        return self.errorinfo
+
+if __name__== '__main__':
+    try:
+        raise CustomError('客户异常')
+    except CustomError as e:
+        print(e)
