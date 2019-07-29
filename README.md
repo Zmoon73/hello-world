@@ -3,14 +3,14 @@
 Hi，Everyone. I am a middle school teacher and I want to develope a program to help me collect, sort and analyze students' files. With this program, I can improve students' performance in class and exams. I will learn to code in Python step by step to do so. Thank you.
 
 # Day1
-Github涉及repositories，branches，commits，和pull requests。
+'''Github涉及repositories，branches，commits，和pull requests。
 一个项目下面可以有多个repositories，每个repositories里面有多个branches。
 一个repository默认一个branch——master branch，我们可以在branch这一栏新建第二个branch，新建的2号与主branch完全相同，是平行关系。
 此时，在master branch里做的任何修改不会进入2号branch，同理2号branch中的修改也不会进入master。
 除非，用pull request将一个branch compare 另一个branch并且merge，这样两个branch的修改或者内容就又完全一致了。
 有意思的是，虽然merge了，但是仍可以在每个branch独立更改而不影响被merge into的那个branch。
 在本地修改了内容，在GitHub的desktop上相应repository里会显示需要commit修改后的文件，然后要push origin去到网页中。最后仍然需要pull request让相应repository的管理者merge into。
-为什么每次pull request都要有一个名字框，既然是compare两个branch而非文件，但是名字框必填一个文件名？这个名字只是compare时注此次行为的一个主题或关键词用的，我认为。
+为什么每次pull request都要有一个名字框，既然是compare两个branch而非文件，但是名字框必填一个文件名？这个名字只是compare时注此次行为的一个主题或关键词用的，我认为。'''
 # Day2
 今天发现fork的repository并不能与主库实时更新，因此fork只是为了让自己能够对主库进行commit，pull requests，然后贡献绵薄之力的。如果要实时同步，要写代码。
 Anaconda很强大，我喜欢它的Anaconda Prompt。在AP中写入python并回车，可以进入python编程模式，通过同时按Ctrl+Z+回车，退出编程模式。还可以直接键入spyder或者jupyter-notebook按回车打开相应程序。
