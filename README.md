@@ -82,4 +82,10 @@ if __name__== '__main__':
         print(e.errorinfo)
 except后可接多个异常(<1>,<2>,<3>)，这些异常不分先后；但如果分多个except书写，那么依次执行。
 如果判断完该程序无错误，还需执行其他程序，可以用else:程序体。
-except Exception as e: traceback.print_exc()，可以追溯错误的位置。
+except Exception as e: traceback.print_exc()，可以追溯错误的位置。注：这个需要首先import traceback。
+还有一种跟踪错误的方法：使用日志，如：
+    import logging
+    logger=logging.getLogger(__name__)
+    ……except Exception as i:
+        logger.exception(i)
+# Day9
