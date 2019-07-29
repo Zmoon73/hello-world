@@ -75,9 +75,11 @@ class CustomError(Exception):
         self.errorinfo=ErrorInfo
     def__str__(self):
         return self.errorinfo
-
 if __name__== '__main__':
     try:
         raise CustomError('客户异常')
     except CustomError as e:
-        print(e)
+        print(e.errorinfo)
+except后可接多个异常(<1>,<2>,<3>)，这些异常不分先后；但如果分多个except书写，那么依次执行。
+如果判断完该程序无错误，还需执行其他程序，可以用else:程序体。
+except Exception as e: traceback.print_exc()，可以追溯错误的位置。
