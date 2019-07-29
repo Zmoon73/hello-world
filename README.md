@@ -89,3 +89,6 @@ except Exception as e: traceback.print_exc()，可以追溯错误的位置。注
     ……except Exception as i:
         logger.exception(i)
 # Day9
+标准库应该是由模块和其中包含的函数构成的。使用时统一格式：
+import 标准库名称
+    标准库.标准库里的函数方法()
