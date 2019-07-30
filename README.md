@@ -66,7 +66,8 @@ obj1=('adam',18) # 形参self接受obj1的变量，第一个值name接受adam，
                    continue 应该是只跳出该次循环继续下次循环，接另一种情况
         else # 这个else是第一个for里的，不是if的；如果第二个for循环不满足条件，则直接执行else
 # Day5
-sorted(iterable, *, key=None, reverse=False),
+sorted(iterable, *, key=None, reverse=False)，其中key用来进行比较排序，reverse=True意味着降次排序。
+map()是 Python 内置的高阶函数，它接收一个函数 f 和一个 list，并通过把函数 f 依次作用在 list 的每个元素上，得到一个新的 list 并返回。例：squares = list(map(lambda x: x**2, range(10)))。
 
 # Day8
 捕获异常：try:程序体  except Exception as e:print（e），except将错误捕获赋值给e变量，然后打印出来，这样程序运行时就不会报错。except后面可以跟具体   的错误类型，但如果程序错误与我们定义的错误类型不匹配，那么程序仍然会报错，故而当不确定错误类型时，可以直接跟Exception。因此可以将except视为接收了错   误并打印出来。
