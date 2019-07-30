@@ -67,7 +67,17 @@ obj1=('adam',18) # 形参self接受obj1的变量，第一个值name接受adam，
         else # 这个else是第一个for里的，不是if的；如果第二个for循环不满足条件，则直接执行else
 # Day5
 sorted(iterable, *, key=None, reverse=False)，其中key用来进行比较排序，reverse=True意味着降次排序。
-map()是 Python 内置的高阶函数，它接收一个函数 f 和一个 list，并通过把函数 f 依次作用在 list 的每个元素上，得到一个新的 list 并返回。例：squares = list(map(lambda x: x**2, range(10)))。
+map()是 Python 内置的高阶函数，它接收一个函数 f 和一个 list，并通过把函数 f 依次作用在 list 的每个元素上，得到一个新的 list 并返回。例：squares =   list(map(lambda x: x**2, range(10)))。map()函数不改变原有的 list，而是返回一个新的 list。利用map()函数，可以把一个 list 转换为另一个       list，只需要传入转换函数。
+元祖表现为不同元素之间用，隔开，如果其中元素还有可能是列表，则每个元素外还有圆括号以区分。
+集合表示为set()，其内部元素没有重复。集合可用数学中得包含、不包含等计算。
+字典： 键: 值 对的集合，键唯一且不可变。对一个字典执行 list(字典名) 将返回包含该字典中所有键的列表；如需排序，则要使用 sorted(字典名)。那么，   lambda x:x+1是否是一个字典呢？
+  在字典中循环时，用 items()方法可将关键字和对应的值同时取出；序列中循环时，用 enumerate()函数可以将索引位置和其对应的值同时取出。
+同时在两个或更多序列中循环时，可以用 zip()函数将其内元素一一匹配：
+  questions = ['name', 'quest', 'favorite color']
+  answers = ['lancelot', 'the holy grail', 'blue']
+  for q, a in zip(questions, answers):
+...     print('What is your {0}?  It is {1}.'.format(q, a))
+内置类型一天看一个吧！记得打卡！
 
 # Day8
 捕获异常：try:程序体  except Exception as e:print（e），except将错误捕获赋值给e变量，然后打印出来，这样程序运行时就不会报错。except后面可以跟具体   的错误类型，但如果程序错误与我们定义的错误类型不匹配，那么程序仍然会报错，故而当不确定错误类型时，可以直接跟Exception。因此可以将except视为接收了错   误并打印出来。
